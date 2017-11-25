@@ -100,7 +100,6 @@ line-height: 1.33;
 /*info*/
 .info {
 	display: flex;
-	flex-wrap: nowrap;
 	background-color: hsl(96, 0%, 88%);
 }
 
@@ -130,24 +129,26 @@ line-height: 1.33;
 margin-bottom: 2rem;
  }
 
-.orientation
-.campus
+.orientation,
+.campus,
 .lecturer {
 width: 100%;
 display: flex;
-
-margin-right: 1.5rem;
 margin-left: 1.5rem;
+}
+
+.lecturer {
+background-color: hsl(0, 0%, 66%);
 }
 
 .small-column img {
 height: auto;
-padding: 1rem;
+margin: 1rem;
 width: 50%;
 }
 
-.orientation-content
-.campus-content
+.orientation-content,
+.campus-content,
 .lecturer-content {
 width: 65%;
 }
@@ -162,4 +163,16 @@ padding: .5rem;
 .campus-content a:visited
 .lecturer-content a:visited {
 	color: darkblue;
+}
+
+/*courses in grid format*/
+
+.grid {
+	margin: 2rem 4.5rem;
+	text-align: center;
+}
+
+.cell img {
+	width: 100%;
+	height: auto;
 }
