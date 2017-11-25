@@ -3,7 +3,11 @@ html {
   font-size: 16px;
   background-color: hsl(0, 0%, 66%);
 	text-align: center;
-	  }
+  }
+
+body {
+		margin: 0;
+}
 
 .container {
 	width: 100%;
@@ -16,8 +20,12 @@ html {
 .container img {
 	height: 4rem;
 	margin-left: 1.5rem;
-		}
+	}
 
+.container span {
+  font-size: 2rem;
+	text-transform: uppercase;
+}
 
 	nav {
 	display: flex;
@@ -26,18 +34,6 @@ html {
   padding: 1rem 0;
 
 	}
-
-
-.container span {
-  font-size: 2rem;
-	}
-
-
-.container li {
-  display: inline;
-  padding: 0 1rem;
-	}
-
 
 nav ul {
 	margin-right: 1rem;
@@ -56,9 +52,9 @@ nav li {
 
 .banner {
  display: flex;
- justify-content: center;
-	}
-
+ align-items: center;
+ text-align: center;
+ 	}
 
 .banner img {
 width: 60%;
@@ -70,8 +66,14 @@ margin-left: 1.5rem;
 }
 
 .headline h1 {
-font-weight: bold;
+font-weight: Work Sans 800, sans-serif;
+font-size: 3.5rem;
 	}
+
+.headline h3 {
+	font-weight: normal;
+	font-size: 2rem;
+}
 
 .banner .btn {
  background-color: firebrick;
@@ -79,7 +81,7 @@ font-weight: bold;
   border-radius: .5rem;
 	padding: .5rem;
 	height: 3rem;
-	width: 6rem;
+	width: 10rem;
  font-size: 1rem;
 line-height: 1.33;
 }
@@ -92,5 +94,72 @@ line-height: 1.33;
 }
 .banner .btn:visited {
 	background-color: firebrick;
+	color: darkblue;
+}
+
+/*info*/
+.info {
+	display: flex;
+	flex-wrap: nowrap;
+	background-color: hsl(96, 0%, 88%);
+}
+
+.large-column {
+	width: 60%;
+	}
+
+.large-column img {
+	width: 100%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-right: 1.5rem;
+	margin-left: 1.5rem;
+}
+
+.large-column h1 {
+	font-weight: Work Sans 800;
+}
+
+.large-column p:last-child {
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.small-column {
+	width: 40%;
+	margin-top: 2rem;
+margin-bottom: 2rem;
+ }
+
+.orientation
+.campus
+.lecturer {
+width: 100%;
+display: flex;
+
+margin-right: 1.5rem;
+margin-left: 1.5rem;
+}
+
+.small-column img {
+height: auto;
+padding: 1rem;
+width: 50%;
+}
+
+.orientation-content
+.campus-content
+.lecturer-content {
+width: 65%;
+}
+
+.orientation-content h1, h2
+.campus-content h1, h2
+.lecturer-content h1, h2 {
+padding: .5rem;
+}
+
+.orientation-content a:visited
+.campus-content a:visited
+.lecturer-content a:visited {
 	color: darkblue;
 }
