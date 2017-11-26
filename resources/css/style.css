@@ -57,17 +57,17 @@ nav li {
  	}
 
 .banner img {
-width: 60%;
-height: 50%;
-margin-top: 2rem;
-margin-bottom: 2rem;
-margin-right: 1.5rem;
-margin-left: 1.5rem;
+ width: 60%;
+ height: 50%;
+ margin-top: 2rem;
+ margin-bottom: 2rem;
+ margin-right: 1.5rem;
+ margin-left: 1.5rem;
 }
 
 .headline h1 {
-font-weight: Work Sans 800, sans-serif;
-font-size: 3.5rem;
+ font-weight: Work Sans 800, sans-serif;
+ font-size: 3.5rem;
 	}
 
 .headline h3 {
@@ -78,12 +78,12 @@ font-size: 3.5rem;
 .banner .btn {
  background-color: firebrick;
  color: white;
-  border-radius: .5rem;
-	padding: .5rem;
-	height: 3rem;
-	width: 10rem;
+ border-radius: .5rem;
+ padding: .5rem;
+ height: 3rem;
+ width: 10rem;
  font-size: 1rem;
-line-height: 1.33;
+ line-height: 1.33;
 }
 
 .banner .btn:hover {
@@ -98,16 +98,19 @@ line-height: 1.33;
 }
 
 /*info*/
-.info {
+.info-subcontainer,
+.exhibit-subcontainer {
 	display: flex;
 	background-color: hsl(96, 0%, 88%);
 }
 
-.large-column {
+.large-column,
+.large-column2 {
 	width: 60%;
 	}
 
-.large-column img {
+.large-column img,
+.large-column2 video {
 	width: 100%;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
@@ -115,7 +118,8 @@ line-height: 1.33;
 	margin-left: 1.5rem;
 }
 
-.large-column h1 {
+.large-column h1,
+.large-column2 h1 {
 	font-weight: Work Sans 800;
 }
 
@@ -124,39 +128,39 @@ line-height: 1.33;
 }
 
 .small-column {
-	width: 40%;
-	margin-top: 2rem;
-margin-bottom: 2rem;
+ width: 40%;
+ margin-top: 2rem;
+ margin-bottom: 2rem;
  }
 
 .orientation,
 .campus,
 .lecturer {
-width: 100%;
-display: flex;
-margin-left: 1.5rem;
+ width: 100%;
+ display: flex;
+ margin-left: 1.5rem;
 }
 
 .lecturer {
-background-color: hsl(0, 0%, 66%);
+ background-color: hsl(0, 0%, 66%);
 }
 
 .small-column img {
-height: auto;
-margin: 1rem;
-width: 50%;
+ height: auto;
+ margin: 1rem;
+ width: 50%;
 }
 
 .orientation-content,
 .campus-content,
 .lecturer-content {
-width: 65%;
+ width: 65%;
 }
 
 .orientation-content h1, h2
 .campus-content h1, h2
 .lecturer-content h1, h2 {
-padding: .5rem;
+ padding: .5rem;
 }
 
 .orientation-content a:visited
@@ -165,14 +169,35 @@ padding: .5rem;
 	color: darkblue;
 }
 
-/*courses in grid format*/
-
-.grid {
-	margin: 2rem 4.5rem;
-	text-align: center;
+/*course offer in grid format*/
+.courses-subcontainer {
+  background-color: hsl(92, 0%, 99%);
 }
 
-.cell img {
-	width: 100%;
-	height: auto;
+.wrapper {
+  display: grid;
+  grid-template-columns: 30rem 30rem 30rem;
+  grid-gap: 2rem;
+  text-align: center;
+  margin-right: 4.5rem;
+  margin-left: 4.5rem;
+  margin-top: 2rem;
+  margin-bottom; 2rem;
+}
+
+.wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper h2 {
+  font-weight: Work Sans 800;
+}
+
+.wrapper h4 {
+  text-transform: capitalize;
+}
+
+.truncated-course-offer {
+  display: none;
 }
