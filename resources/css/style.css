@@ -172,8 +172,8 @@ background-color: hsl(96, 0%, 88%);
  padding: .5rem;
 }
 
-.orientation-content a:visited
-.campus-content a:visited
+.orientation-content a:visited,
+.campus-content a:visited,
 .lecturer-content a:visited {
 	color: darkblue;
 }
@@ -185,9 +185,10 @@ background-color: hsl(96, 0%, 88%);
 
 .wrapper {
   display: grid;
-  grid-template-columns: 30rem 30rem 30rem;
+  grid-template-columns: 40rem 40rem 40rem;
   grid-gap: 2rem;
   text-align: center;
+  justify-content: center;
   margin-right: 4.5rem;
   margin-left: 4.5rem;
 
