@@ -98,10 +98,9 @@ nav li {
 }
 
 /*info*/
-.info-subcontainer,
-.exhibit-subcontainer {
-	display: flex;
-	background-color: hsl(96, 0%, 88%);
+.info-subcontainer {
+display: flex;
+background-color: hsl(96, 0%, 88%);
 }
 
 .large-column,
@@ -114,7 +113,6 @@ nav li {
 	width: 100%;
 	margin-top: 2rem;
 	margin-bottom: 2rem;
-	margin-right: 1.5rem;
 	margin-left: 1.5rem;
 }
 
@@ -127,25 +125,31 @@ nav li {
 	font-family: 'Alegreya Sans SC', sans-serif;
 }
 
-.small-column {
+.small-column,
+.small-column2 {
  width: 40%;
  margin-top: 2rem;
  margin-bottom: 2rem;
+ margin-left: 1.5;
  }
 
 .orientation,
 .campus,
-.lecturer {
+.lecturer,
+.fisma,
+.new-york {
  width: 100%;
  display: flex;
  margin-left: 1.5rem;
 }
 
-.lecturer {
+.lecturer,
+.fisma {
  background-color: hsl(0, 0%, 66%);
 }
 
-.small-column img {
+.small-column img,
+.small-column2 img {
  height: auto;
  margin: 1rem;
  width: 50%;
@@ -153,13 +157,18 @@ nav li {
 
 .orientation-content,
 .campus-content,
-.lecturer-content {
+.lecturer-content,
+.fisma-content,
+.new-york-content {
  width: 65%;
+ justify-content: center;
 }
 
-.orientation-content h1, h2
-.campus-content h1, h2
-.lecturer-content h1, h2 {
+.orientation-content h1, h2,
+.campus-content h1, h2,
+.lecturer-content h1, h2,
+.fisma-content h1, h2,
+.new-york-content h1, h2 {
  padding: .5rem;
 }
 
@@ -181,8 +190,7 @@ nav li {
   text-align: center;
   margin-right: 4.5rem;
   margin-left: 4.5rem;
-  margin-top: 2rem;
-  margin-bottom; 2rem;
+
 }
 
 .wrapper img {
@@ -201,3 +209,37 @@ nav li {
 .truncated-course-offer {
   display: none;
 }
+
+.exhibit-subcontainer {
+background-color: hsl(96, 0%, 88%);
+}
+
+.exhibits {
+  display: flex;
+}
+
+.truncated-thesis {
+  display: none;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  background-color: hsl(92, 0%, 99%);
+
+}
+
+.copy-subcontainer {
+  align-items: center;
+	justify-content: space-between;
+}
+
+.footer-menu li {
+  display: inline;
+}
+
+/*media query*/
+@media only screen and (max-device-width: 1024px) {
+  .container, .courses-subcontainer, .large-column, .exhibit-subcontainer {
+    display: none;
+  }
