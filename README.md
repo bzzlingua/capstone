@@ -1,6 +1,6 @@
 Greetings reviewer(s),
 
-I appreciate having the two-week culance to finish this last project!
+I appreciate having the two-week coulance to finish this last project!
 
 I'm still a bit in over my head with the flex boxes.
 
